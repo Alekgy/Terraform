@@ -1,0 +1,20 @@
+# Archivos de estado local de Terraform (NUNCA SUBIR)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Directorio de plugins y módulos
+.terraform/
+.terraform.lock.hcl.bak
+
+# Archivos de variables con credenciales/secretos reales
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Respaldos y volcados de datos
+*.sql
+*_backup.json
