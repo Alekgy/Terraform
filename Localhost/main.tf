@@ -9,12 +9,9 @@ terraform {
 }
 
 provider "docker" {
-  # En Linux usa: "unix:///var/run/docker.sock"
-  # En Windows/Docker Desktop suele ser: "npipe:////.//pipe/docker_engine"
   host = "unix:///var/run/docker.sock"
 }
 
-# Red interna compartida
 resource "docker_network" "app_network" {
   name = "personal_apps_network"
 }
